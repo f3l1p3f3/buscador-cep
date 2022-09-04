@@ -1,0 +1,143 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(#121212, #212b46);
+    font-size: 62.5%;
+}
+
+.title {
+    font-size: 8.5em;
+    color: #FFF;
+    animation: flipTitle 2s;
+   
+}
+
+@keyframes flipTitle {
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+
+.containerInput {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+.containerInput input {
+    background-color: transparent;
+    border: 0;
+    font-size: 2.0em;
+    color: #FFF;
+    outline: none;
+    margin-right: 8px;
+}
+
+.containerInput input::placeholder{
+    color: #F1F1F1;
+}
+
+.buttonSearch {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonSearch:hover {
+    transform: scale(1.2);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.main h2{
+    margin: 16px 0;
+    font-size: 3.9em;
+}
+
+.main span {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.btnLimpar {
+    font-size: 1.6em;
+    font-weight: bold;
+    background-color: #FFF;
+    margin-top: 20px;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .title {
+        font-size: 6.0em;
+    }
+    .main h2{
+        font-size: 2.6em;
+    }
+
+    .main {
+        width: 70%;
+    }
+}
+
+@media (max-width: 502px){
+    .title {
+        font-size: 4.5em;
+    }
+
+    .containerInput input {
+        font-size: 1.8em;
+    }
+
+    .main h2 {
+        font-size: 2.0em;
+    }
+
+    .main span {
+        font-size: 1.4em;
+    }
+
+    .main {
+        width: 70%;
+    }
+}
+@media (max-width: 375px){
+    .title{
+        font-size: 3.5em;
+    }
+
+    .containerInput input{
+        font-size: 1.5em;
+    }
+
+    .main {
+        width: 70%;
+    }
+}
