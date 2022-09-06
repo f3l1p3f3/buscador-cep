@@ -44,6 +44,11 @@
 .containerInput input::placeholder{
     color: #F1F1F1;
 }
+.container input:focus::-webkit-input-placeholder{
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 0.3s;
+}
 
 .buttonSearch {
     background-color: transparent;
